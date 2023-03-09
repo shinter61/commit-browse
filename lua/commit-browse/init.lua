@@ -1,4 +1,5 @@
 local M = {}
+local netrw = require('netrw')
 M.config = {
 
 }
@@ -6,8 +7,8 @@ M.config = {
 M.setup = function (args)
 end
 
-M.hello = function (args)
-  print('hello commit-browse!')
+M.CBrowse = function (args)
+  netrw.BrowseX('https://www.google.com/')
 end
 
 return M
